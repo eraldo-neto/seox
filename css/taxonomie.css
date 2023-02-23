@@ -1,0 +1,292 @@
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+main {
+  display: block; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+a {
+  background-color: transparent; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted; }
+
+b, strong {
+  font-weight: bolder; }
+
+code, kbd, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -.25em; }
+
+sup {
+  top: -.5em; }
+
+img {
+  border-style: none; }
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; }
+
+button, input {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: .35em .75em .625em; }
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+progress {
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+details {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+/* Utils
+   ========================================================================== */
+* {
+  box-sizing: border-box; }
+
+.desktop,
+.tablet {
+  display: none; }
+
+a {
+  text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0; }
+
+/* Fonts
+   ========================================================================== */
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../../fonts/OpenSans-Regular.woff2") format("woff2"), url("../../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../../fonts/OpenSans-Bold.woff2") format("woff2"), url("../../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 700; }
+
+/* Typography
+   ========================================================================== */
+html {
+  font-size: 12px;
+  font-family: 'OpenSans', sans-serif; }
+  @media (min-width: 768px) {
+    html {
+      font-size: 14px; } }
+  @media (min-width: 1024px) {
+    html {
+      font-size: 16px; } }
+
+.header {
+  width: 100%;
+  background-color: #000;
+  justify-content: center;
+  margin: 0;
+  padding: 16px 0; }
+  .header a {
+    width: max-content; }
+
+.share {
+  max-width: 270px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .share {
+      min-width: 270px;
+      margin: 0; } }
+
+.hero {
+  margin-bottom: 40px; }
+  .hero .bar {
+    width: 100%;
+    height: 56px;
+    background-color: #222222; }
+  .hero .wrapper {
+    width: calc(100% - 20px);
+    margin: -31px auto 0;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #333333; }
+    @media (min-width: 768px) {
+      .hero .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; } }
+    .hero .wrapper .title {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 34px;
+      margin-bottom: 16px;
+      color: #ED686B;
+      text-transform: uppercase;
+      text-align: center; }
+      @media (min-width: 768px) {
+        .hero .wrapper .title {
+          margin-bottom: 0; } }
+
+@media (min-width: 768px) {
+  .post-card {
+    display: flex;
+    align-items: center; } }
+
+@media (min-width: 768px) {
+  .post-card .link-card-img {
+    margin-right: 24px; } }
+
+.post-card .link-card-img .card-img {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  overflow: hidden; }
+  .post-card .link-card-img .card-img img {
+    width: 100%;
+    height: 204px;
+    object-fit: cover; }
+    @media (min-width: 768px) {
+      .post-card .link-card-img .card-img img {
+        width: 327px; } }
+
+.post-card .title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+  margin-bottom: 16px;
+  line-height: 24px; }
+
+.post-card .date {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #222222; }
+  .post-card .date svg {
+    margin-right: 9px; }
+
+.advertisement {
+  border-radius: 4px;
+  padding: 10px 13px 16px;
+  background-color: #F4F3F9;
+  margin-top: 24px;
+  margin-bottom: 93px; }
+  @media (min-width: 1200px) {
+    .advertisement {
+      min-width: 327px;
+      position: sticky;
+      margin-top: 0;
+      float: right;
+      top: 120px;
+      right: 0;
+      z-index: 5; } }
+  .advertisement p {
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 10px; }
+  .advertisement .image {
+    max-width: 100%;
+    height: 600px;
+    background-color: #D2D2D2; }
+
+.post-grid {
+  width: calc(100% - 48px);
+  margin: 0 auto;
+  padding: 0; }
+  @media (max-width: 1199px) {
+    .post-grid {
+      display: flex;
+      flex-direction: column-reverse; } }
+  .post-grid .post-card {
+    margin-bottom: 16px; }
+    @media (min-width: 1200px) {
+      .post-grid .post-card {
+        margin-right: calc(160px + 370px); } }

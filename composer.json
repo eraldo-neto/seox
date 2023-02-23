@@ -18,7 +18,10 @@
         "@check-style",
         "@check-security"
       ]
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
-  }
-  
-  
+}

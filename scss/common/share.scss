@@ -1,0 +1,9 @@
+.share {
+    max-width: 270px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+        min-width: 270px;
+        margin: 0;
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "seox-rh/teste-frontend-02",
+    "type": "wordpress-theme",
+    "description": "Teste frontend 02 WordPress",
+    "keywords": [
+      "WordPress"
+    ],
+    "homepage": "https://www.seox.com.br/",
+    "require-dev": {
+      "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+      "pheromone/phpcs-security-audit": "^2.0",
+      "wp-coding-standards/wpcs": "^2.3"
+    },
+    "scripts": {
+      "check-style": "phpcs -p --standard=phpcs.xml *.php **/*.php --ignore=*/vendor/*",
+      "check-security": "phpcs -p --standard=Security *.php **/*.php --ignore=*/vendor/*",
+      "check": [
+        "@check-style",
+        "@check-security"
+      ]
+    }
+  }
+  
+  

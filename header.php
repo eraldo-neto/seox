@@ -10,3 +10,9 @@
 </head>
 
 <body <?php body_class() ?>>
+
+<header class="header row">
+    <a href="<?= get_the_permalink() ?>">
+        <?= file_get_contents( get_template_directory_uri() . '/assets/logo.svg' ) ?>
+    </a> 
+</header>

@@ -1,0 +1,21 @@
+@import './post-card.scss';
+@import '../common/advertisement.scss';
+
+.post-grid {
+    width: calc(100% - 48px);
+    margin: 0 auto;
+    padding: 0;
+
+    @media (max-width: 1199px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .post-card {
+        margin-bottom: 16px;
+
+        @media (min-width: 1200px) {
+            margin-right: calc(160px + 370px);
+        }
+    }
+}

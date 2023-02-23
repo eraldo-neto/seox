@@ -1,9 +1,9 @@
 <?php
-    $featured_img = seox_get_image_attributes( get_post_thumbnail_id(), 'full' );
-    $date = get_the_date('d ' . __('\d\e','seox') . ' F, Y');
+    $featured_img = seox_get_image_attributes( get_post_thumbnail_id(), 'medium' );
+    $date = get_the_date('d/m/Y H:i');
 ?>
 <div class="post-card fixed-container">
-    <a href="<?= get_the_permalink() ?>" class="link-card-img">
+    <a href="<?= get_the_permalink() ?>" aria-label="<?= $featured_img['alt'] ?>" class="link-card-img">
         <div class="card-img">
             <img
                 src="<?= $featured_img['src'] ?>"

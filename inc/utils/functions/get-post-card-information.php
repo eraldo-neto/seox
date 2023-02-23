@@ -7,7 +7,6 @@ function seox_get_post_card_information($location = null) {
 
 	$title = get_the_title();
 	$excerpt = get_the_excerpt();
-    $date = get_the_date('d ' . __('\d\e','seox') . ' F, Y');
 	if(get_field('post-time-reading')) {
         $reading_time = get_field('post-time-reading');
     } else {

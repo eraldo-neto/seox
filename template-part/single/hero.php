@@ -1,5 +1,5 @@
 <?php 
-$date = get_the_date('d ' . __('\d\e','seox') . ' F, Y');
+$date = get_the_date('d/m/Y H:i');
 ?>
 
 <div class="hero container">

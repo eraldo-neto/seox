@@ -1,0 +1,16 @@
+{
+  "name": "seox",
+  "version": "1.0.0",
+  "description": "O objetivo deste teste é propor uma avaliação técnica voltada aos padrões de desenvolvimento do WordPress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run scss-compile",
+    "scss-compile": "node-sass -rw ./scss -o ./css",
+    "watch": "npm run scss-compile"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
